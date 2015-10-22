@@ -1,0 +1,42 @@
+{
+  "name": "ng-bootstrap-dropdown",
+  "version": "0.0.0",
+  "description": "AngularJS dropdown directive that just works. (requires Bootstrap)",
+  "main": "src/dropdown.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sterlingw/ng-bootstrap-dropdown.git"
+  },
+  "keywords": [
+    "dropdown",
+    "angular",
+    "dropdown",
+    "angularjs",
+    "dropdown",
+    "dropdown",
+    "directive"
+  ],
+  "author": "sterling whitley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sterlingw/ng-bootstrap-dropdown/issues"
+  },
+  "homepage": "https://github.com/sterlingw/ng-bootstrap-dropdown#readme",
+  "devDependencies": {
+    "angular": "^1.4.7",
+    "angular-mocks": "^1.4.7",
+    "bootstrap": "^3.3.5",
+    "jasmine-core": "^2.3.4",
+    "jquery": "^2.1.4",
+    "karma": "^0.13.14",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
+  }
+}

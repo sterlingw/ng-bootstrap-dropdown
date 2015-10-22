@@ -1,0 +1,27 @@
+{
+  "name": "ng-bootstrap-dropdown",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sterlingw/ng-bootstrap-dropdown",
+  "authors": [
+    "sterling <sterlingsrq@gmail.com>"
+  ],
+  "main": "src/dropdown.js",
+  "keywords": [
+    "dropdown",
+    "angular",
+    "dropdown",
+    "angularjs",
+    "dropdown",
+    "dropdown",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ]
+}

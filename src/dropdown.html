@@ -1,0 +1,14 @@
+<div>
+    <div class="dropdown" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{selectedOption}} 
+            <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu">
+            <li ng-repeat="item in options" ng-click="selectOption(item)">
+                <a href="#">{{item}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
