@@ -11,6 +11,11 @@ if (typeof angular == 'undefined') {
 }
 
 angular.module('ng-bootstrap-dropdown', [])
+
+.run(function($templateCache){
+    $templateCache.put('/src/dropdown.html', '<div><div class="dropdown" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{selectedOption}} <span class="caret"></span></button><ul class="dropdown-menu"><li ng-repeat="item in options" ng-click="selectOption(item)"><a href="#">{{item}}</a></li></ul></div></div>');
+})
+
 .directive('dropdown', function($templateCache, $timeout) {
     return {
         restrict: 'E',
@@ -18,17 +23,17 @@ angular.module('ng-bootstrap-dropdown', [])
         scope: {
             options: '=',
             model: '=selectedModel',
-            selectedFirst: '@',
+            defaultSelection: '@',
             onSelect: '&'
         },
-        templateUrl: '/src/dropdown.html',
+        template: $templateCache.get('/src/dropdown.html'),
         link: function(scope, element, attrs){
             if (angular.isUndefined(attrs.options)) {
                 throw new Error('Dropdown: missing `options` attribute.');
             }
 
             if (!angular.isArray(scope.options)) {
-                throw new Error('Dropdown: ' + scope.options + ' is not an array.');
+                throw new Error('Dropdown: attribute `options` must be an array.');
             }
 
             /**
@@ -51,11 +56,11 @@ angular.module('ng-bootstrap-dropdown', [])
                 }
             });
 
-            if (angular.isUndefined(attrs.selectedFirst)) {
+            if (angular.isUndefined(attrs.defaultSelection)) {
                 // Set the first option as selected
                 scope.selectedOption = scope.options[0];
             } else {
-                scope.selectedOption = attrs.selectedFirst;
+                scope.selectedOption = attrs.defaultSelection;
             }
         }
     };
