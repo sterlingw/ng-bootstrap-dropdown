@@ -69,14 +69,14 @@ describe('dropdown', function() {
                 element = $compile(angular.element('<dropdown options="testOptions"></dropdown>'))(scope);
                 scope.$digest();
             });
-            it('should update selectedOption', function() {
+            it('updates selectedOption', function() {
                 var option = scope.testOptions[0];
 
                 element.isolateScope().selectOption(option);
 
                 expect(element.isolateScope().selectedOption).toBe(option);    
             });
-            it('should update model', function() {
+            it('updates the model', function() {
                 var option = scope.testOptions[0];
 
                 element.isolateScope().selectOption(option);
