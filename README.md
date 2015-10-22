@@ -1,4 +1,4 @@
-# ng-bootstrap-dropdown
+# ng-bootstrap-dropdown ![](https://magnum.travis-ci.com/sterlingw/ng-bootstrap-dropdown.svg?token=cK5pQscszzyjuzCs37S3&branch=master)
 AngularJS dropdown directive that just works. (requires Bootstrap)
 
 **Note: this package requires angular and bootstrap.**
