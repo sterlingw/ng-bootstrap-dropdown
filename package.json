@@ -1,6 +1,6 @@
 {
   "name": "ng-bootstrap-dropdown",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "AngularJS dropdown directive that just works. (requires Bootstrap)",
   "main": "src/dropdown.js",
   "directories": {

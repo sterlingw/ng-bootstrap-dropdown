@@ -1,5 +1,5 @@
 # ng-bootstrap-dropdown ![](https://magnum.travis-ci.com/sterlingw/ng-bootstrap-dropdown.svg?token=cK5pQscszzyjuzCs37S3&branch=master)
-AngularJS dropdown directive that just works. (requires Bootstrap)
+AngularJS dropdown directive that just works. (requires Bootstrap). The dropdown uses the default bootstrap styling.
 
 **Note: this package requires angular and bootstrap.**
 
@@ -14,6 +14,11 @@ npm install ng-bootstrap-dropdown --save
 ```
 
 # Usage
+Add `ng-bootstrap-dropdown` as a module dependency. Like this:
+```
+var app = angular.module('MyModule', ['ng-bootstrap-dropdown']);
+```
+
 The only required attribute is `options`. For example:
 ```
 <dropdown options="[1, 2, 3]"></dropdown>
